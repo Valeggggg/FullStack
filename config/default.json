@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "jwtSecret" : "valik valik valik",
-  "mongoUri": "mongodb+srv://user:rootroot@cluster0.kpowe.mongodb.net/?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://user:rootroot@cluster0.kpowe.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
 }

@@ -23,12 +23,12 @@ export const useAuth = () => {
     },[])
 
     useEffect(()=> {
-        const data = localStorage.getItem(storageName)
+        const data = JSON.parse(localStorage.getItem(storageName))
 
         if (data && data.token) {
             login(data.token,data.userId)
         }
-    },[login])
+    },[])
 
     return { login, logout, token, userId }
 }
